@@ -14,9 +14,9 @@ class UserModel extends Model
     {
         $result = null;
         if ($options == null) {
-            $query[] = "SELECT `id`, `username`, `email`, `status`, `created`, `created_by`, `modified`, `modified_by` , `group_id`";
-            $query[] = "FROM `$this->table`";
-            $query[] = "WHERE `id` > 0";
+            $query[]	= "SELECT `u`.`id`, `u`.`username`, `u`.`email`, `u`.`status`, `u`.`fullname`, `u`.`ordering`, `u`.`created`, `u`.`created_by`, `u`.`modified`, `u`.`modified_by`, `g`.`name` AS `group_name`";
+            $query[]	= "FROM `$this->table` AS `u`, `". TBL_GROUP . "` AS `g`";
+            $query[]	= "WHERE `u`.`group_id` = `g`.`id`";
 
             if (isset($params['search']) && $params['search'] != '') {
                 $query[] = "AND (";
