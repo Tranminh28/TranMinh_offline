@@ -1,0 +1,17 @@
+index.php?module=default&controller=book&action=list&category_id=1
+
+van-hoc-tieu-thuyet-1.html
+
+   Văn Học   -   Tiểu  Thuyết     -> van-hoc-tieu-thuyet
+
+- Loại bỏ khoảng trắng dư thừa		Văn Học - Tiểu Thuyết
+- Bỏ ký tự có dấu					Van Hoc - Tieu Thuyet
+- Thay thế khoảng trắng = "-"		Van-Hoc-Tieu-Thuyet
+- Chuyển thành chữ thường			van-hoc-tieu-thuyet
+
+index.php?module=default&controller=book&action=detail&category_id=3&book_id=13
+
+tin-hoc/functional-programming-in-scala-3-144.html
+ 
+
+ 
